@@ -1,8 +1,11 @@
 
-.wrapper {
+.App {
+  background-color: lightblue;
+  text-align: center;
   padding: 5px 20px;
-}
+  width: 500px;
+} 
 
-.wrapper fieldset {
+.App fieldset {
   margin: 20px 0;
 }
