@@ -43,7 +43,14 @@ function App() {
     <div className="App">
       <h1>Welcome</h1>
       {submitting &&
-        <div>Submtting Form...</div>
+        <div>The following will be submitted: 
+          <ul>
+            {Object.entries(formData).map(([first_name, value]) => (
+              <li key={first_name}><strong>{first_name}</strong>:{value.toString()}</li>
+            ))}
+            
+          </ul>
+        </div>
       }
       <form onSubmit={handleSubmit}>
         <fieldset>
