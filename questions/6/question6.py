@@ -16,10 +16,20 @@
 
 def extract_info(filename):
     with open(filename, 'r') as reader:
+        line_count = 0
 
-    line_count = 0
     for row in reader:
         if line_count == 0:
             print(f'Column names are {", ".join(row)}')
             line_count +=1
-        
+        print(f'{row[user_id]}, {row[name]},, {row[version]}, {row[insurance]}')
+        line_count += 1
+
+    sorted(reader[name], key=lambda x: x.slplit[-1])
+
+    for id in reader:
+        if id[user_id] == id[user_id]:
+            for ver in id:
+                return ver[version] > ver[version]
+
+    

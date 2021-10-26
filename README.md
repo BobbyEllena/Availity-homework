@@ -9,3 +9,4 @@
 
 
 3. How would you explain to your grandmother what Availity does?
+    Availity takes the worry out of making sure that all the doctors and clinics are paid.
